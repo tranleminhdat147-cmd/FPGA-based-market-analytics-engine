@@ -1,4 +1,4 @@
-<img width="825" height="796" alt="image" src="https://github.com/user-attachments/assets/75c17ca3-9d55-4404-b43f-a64287418d34" />FPGA Market-Making Quote Engine
+FPGA Market-Making Quote Engine
 ===============================
 
 A real-time market-making quote engine in SystemVerilog. It turns every top-of-book
@@ -21,6 +21,7 @@ that pricing in hardware, with two paths:
 - Slow path (once per bar): price move since the last bar -> squared -> averaged ->
   square root = volatility (sigma), which sets how wide the quotes are.
 
+<img width="782" height="227" alt="image" src="https://github.com/user-attachments/assets/768dab62-16e7-447d-a920-ba970a258e8d" />
 
 The math
 --------
