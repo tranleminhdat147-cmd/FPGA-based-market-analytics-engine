@@ -1,4 +1,4 @@
-FPGA Market-Making Quote Engine
+<img width="825" height="796" alt="image" src="https://github.com/user-attachments/assets/75c17ca3-9d55-4404-b43f-a64287418d34" />FPGA Market-Making Quote Engine
 ===============================
 
 A real-time market-making quote engine in SystemVerilog. It turns every top-of-book
@@ -20,15 +20,6 @@ that pricing in hardware, with two paths:
 - Fast path (every tick): microprice -> fair value -> quote, fully pipelined.
 - Slow path (once per bar): price move since the last bar -> squared -> averaged ->
   square root = volatility (sigma), which sets how wide the quotes are.
-
-                          FAST PATH (every tick, 7 cycles)
-     tick --> [Microprice] --> [Fair-value EMA] -----------------------> [Quote] --> bid / ask
-               4 cycles          1 cycle          |                      2 cycles      ^
-                                                  | FV                                 | sigma
-                                                  v                                    |
-     [Bar trigger] --> [Return^2] --> [Variance EMA] --> [sigma = sqrt(variance)] -----+
-                        2 cycles        1 cycle             34 cycles
-                          SLOW PATH (once per bar)
 
 
 The math
