@@ -21,7 +21,7 @@ that pricing in hardware, with two paths:
 - Slow path (once per bar): price move since the last bar -> squared -> averaged ->
   square root = volatility (sigma), which sets how wide the quotes are.
 
-<img width="782" height="227" alt="image" src="https://github.com/user-attachments/assets/768dab62-16e7-447d-a920-ba970a258e8d" />
+<img width="2000" height="1040" alt="architecture" src="https://github.com/user-attachments/assets/7e63c681-abcc-47b3-ae5c-88da124b4266" />
 
 The math
 --------
