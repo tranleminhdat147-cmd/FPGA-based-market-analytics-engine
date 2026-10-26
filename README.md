@@ -167,21 +167,6 @@ bitstream for the board. Testbench files must not be added to the Quartus design
 file list.
 
 
-Status and roadmap
-------------------
-
-Done: RTL, uniform fixed-point design, AXI4-Stream wrapper, three-level verification,
-full Quartus compile meeting 50 MHz.
-
-Next:
-- Engine_top: UART RX + deframer -> engine -> UART TX, so the design runs on the board
-  with about 4 pins (clock, reset, RX, TX)
-- Run on hardware (on-chip replay + SignalTap, then live ticks from a PC)
-- Replay real top-of-book market data (for example Binance bookTicker)
-- Directed tests for huge price jumps, mid-run reset and settings changed at runtime
-- Optional: inventory skew (Avellaneda-Stoikov style), Ethernet input, AXI4-Lite settings
-
-
 Known limitations
 -----------------
 
