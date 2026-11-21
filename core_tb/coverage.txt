@@ -1,0 +1,130 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /tb_math_chain
+=== Design Unit: work.tb_math_chain
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins         11        11         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /tb_math_chain/cg_tick                          100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_book                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_bid_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_ask_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross x_sizes                                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/tb_math_chain/cov              100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_book                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin normal                                       1846          1          -    Covered              
+        bin locked                                        101          1          -    Covered              
+        bin crossed                                       109          1          -    Covered              
+    Coverpoint cp_bid_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                          197          1          -    Covered              
+        bin nonzero                                      1859          1          -    Covered              
+    Coverpoint cp_ask_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                          209          1          -    Covered              
+        bin nonzero                                      1847          1          -    Covered              
+    Cross x_sizes                                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <nonzero,nonzero>                        1665          1          -    Covered              
+            bin <zero,nonzero>                            182          1          -    Covered              
+            bin <nonzero,zero>                            194          1          -    Covered              
+            bin <zero,zero>                                15          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /tb_math_chain/cg_tick                          100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_book                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_bid_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_ask_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross x_sizes                                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/tb_math_chain/cov              100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_book                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin normal                                       1846          1          -    Covered              
+        bin locked                                        101          1          -    Covered              
+        bin crossed                                       109          1          -    Covered              
+    Coverpoint cp_bid_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                          197          1          -    Covered              
+        bin nonzero                                      1859          1          -    Covered              
+    Coverpoint cp_ask_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                          209          1          -    Covered              
+        bin nonzero                                      1847          1          -    Covered              
+    Cross x_sizes                                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <nonzero,nonzero>                        1665          1          -    Covered              
+            bin <zero,nonzero>                            182          1          -    Covered              
+            bin <nonzero,zero>                            194          1          -    Covered              
+            bin <zero,zero>                                15          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 100.00%
+
