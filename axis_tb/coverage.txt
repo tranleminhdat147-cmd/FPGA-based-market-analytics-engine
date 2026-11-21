@@ -1,0 +1,146 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /engine_pkg
+=== Design Unit: work.engine_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      2        na        na   100.00%
+        Coverpoints/Crosses          7        na        na        na
+            Covergroup Bins         22        22         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /engine_pkg/master_monitor/cg_tick              100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_book                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[BOOK_NORMAL]                             667          1          -    Covered              
+        bin auto[BOOK_LOCKED]                              36          1          -    Covered              
+        bin auto[BOOK_CROSSED]                             97          1          -    Covered              
+    Coverpoint cp_bid_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                           76          1          -    Covered              
+        bin nonzero                                       724          1          -    Covered              
+    Coverpoint cp_ask_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                           92          1          -    Covered              
+        bin nonzero                                       708          1          -    Covered              
+    Cross x_sizes                                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <nonzero,nonzero>                         649          1          -    Covered              
+            bin <zero,nonzero>                             59          1          -    Covered              
+            bin <nonzero,zero>                             75          1          -    Covered              
+            bin <zero,zero>                                17          1          -    Covered              
+ TYPE /engine_pkg/core_monitor/cg_fifo                100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_occupancy                           100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin empty                                         384          1          -    Covered              
+        bin part                                         1395          1          -    Covered              
+        bin full                                         1076          1          -    Covered              
+    Coverpoint cp_tready                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      2231          1          -    Covered              
+        bin auto[1]                                       624          1          -    Covered              
+    Cross x_full_stalled                              100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <full,auto[1]>                             85          1          -    Covered              
+            bin <full,auto[0]>                            991          1          -    Covered              
+            bin <part,auto[0]>                           1129          1          -    Covered              
+            bin <part,auto[1]>                            266          1          -    Covered              
+            bin <empty,auto[1]>                           273          1          -    Covered              
+            bin <empty,auto[0]>                           111          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /engine_pkg/master_monitor/cg_tick              100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_book                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[BOOK_NORMAL]                             667          1          -    Covered              
+        bin auto[BOOK_LOCKED]                              36          1          -    Covered              
+        bin auto[BOOK_CROSSED]                             97          1          -    Covered              
+    Coverpoint cp_bid_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                           76          1          -    Covered              
+        bin nonzero                                       724          1          -    Covered              
+    Coverpoint cp_ask_sz                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                           92          1          -    Covered              
+        bin nonzero                                       708          1          -    Covered              
+    Cross x_sizes                                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <nonzero,nonzero>                         649          1          -    Covered              
+            bin <zero,nonzero>                             59          1          -    Covered              
+            bin <nonzero,zero>                             75          1          -    Covered              
+            bin <zero,zero>                                17          1          -    Covered              
+ TYPE /engine_pkg/core_monitor/cg_fifo                100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_occupancy                           100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin empty                                         384          1          -    Covered              
+        bin part                                         1395          1          -    Covered              
+        bin full                                         1076          1          -    Covered              
+    Coverpoint cp_tready                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      2231          1          -    Covered              
+        bin auto[1]                                       624          1          -    Covered              
+    Cross x_full_stalled                              100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <full,auto[1]>                             85          1          -    Covered              
+            bin <full,auto[0]>                            991          1          -    Covered              
+            bin <part,auto[0]>                           1129          1          -    Covered              
+            bin <part,auto[1]>                            266          1          -    Covered              
+            bin <empty,auto[1]>                           273          1          -    Covered              
+            bin <empty,auto[0]>                           111          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 2
+
+Total Coverage By Instance (filtered view): 100.00%
+

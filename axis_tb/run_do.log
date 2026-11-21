@@ -1,0 +1,138 @@
+Reading pref.tcl
+
+# 2021.2_1
+
+# do run.do
+# 1
+# smoke backpressure overflow
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 13:22:18 on Nov 21,2026
+# vlog -sv -timescale 1ns/1ps "+cover" "+incdir+." ../microprice.sv ../ema.sv ../return_sq.sv ../sigma_sqrt.sv ../quote.sv ../bar_trigger.sv ../timestamp.sv ../analytics_core.sv ../analytics_core_axis.sv axis_if.sv engine_pkg.sv tb_top.sv 
+# -- Compiling module microprice
+# -- Compiling module ema
+# -- Compiling module return_sq
+# -- Compiling module sigma_sqrt
+# -- Compiling module quote
+# -- Compiling module bar_trigger
+# -- Compiling module timestamp
+# -- Compiling module analytics_core
+# -- Compiling module analytics_core_axis
+# -- Compiling interface axis_if
+# -- Compiling package engine_pkg
+# -- Compiling module tb_top
+# -- Importing package engine_pkg
+# 
+# Top level modules:
+# 	tb_top
+# End time: 13:22:18 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 0
+# vsim -quiet -coverage -onfinish stop -voptargs="+acc +cover" work.tb_top "+TEST=smoke" "+seed=1" 
+# Start time: 13:22:18 on Nov 21,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# --- test smoke: 100 ticks, receiver ready 100 % of cycles ---
+# ------------------------------------------------------------
+#  ticks sent         : 100
+#  quotes produced    : 100
+#    ... accepted     : 100
+#    ... dropped      : 0  (DUT counter says 0)
+#  quotes received    : 100
+#  scoreboard matches : 100
+#  scoreboard errors  : 0
+#  functional coverage: 86.11 %  (this run only)
+# ------------------------------------------------------------
+#  TEST PASSED  (test=smoke seed=1)
+# ------------------------------------------------------------
+# ** Note: $finish    : tb_top.sv(161)
+#    Time: 7250 ns  Iteration: 1  Instance: /tb_top
+# Break in Module tb_top at tb_top.sv line 161
+# Stopped at tb_top.sv line 161
+# End time: 13:22:23 on Nov 21,2026, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# vsim -quiet -coverage -onfinish stop -voptargs="+acc +cover" work.tb_top "+TEST=backpressure" "+seed=1" 
+# Start time: 13:22:23 on Nov 21,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# --- test backpressure: 300 ticks, receiver ready 20 % of cycles ---
+# ------------------------------------------------------------
+#  ticks sent         : 300
+#  quotes produced    : 300
+#    ... accepted     : 207
+#    ... dropped      : 93  (DUT counter says 93)
+#  quotes received    : 207
+#  scoreboard matches : 207
+#  scoreboard errors  : 0
+#  functional coverage: 100.00 %  (this run only)
+# ------------------------------------------------------------
+#  TEST PASSED  (test=backpressure seed=1)
+# ------------------------------------------------------------
+# ** Note: $finish    : tb_top.sv(161)
+#    Time: 23470 ns  Iteration: 1  Instance: /tb_top
+# Break in Module tb_top at tb_top.sv line 161
+# Stopped at tb_top.sv line 161
+# End time: 13:22:26 on Nov 21,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# vsim -quiet -coverage -onfinish stop -voptargs="+acc +cover" work.tb_top "+TEST=overflow" "+seed=1" 
+# Start time: 13:22:26 on Nov 21,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# --- test overflow: 400 ticks, receiver ready 3 % of cycles ---
+# ------------------------------------------------------------
+#  ticks sent         : 400
+#  quotes produced    : 400
+#    ... accepted     : 44
+#    ... dropped      : 356  (DUT counter says 356)
+#  quotes received    : 44
+#  scoreboard matches : 44
+#  scoreboard errors  : 0
+#  functional coverage: 100.00 %  (this run only)
+# ------------------------------------------------------------
+#  TEST PASSED  (test=overflow seed=1)
+# ------------------------------------------------------------
+# ** Note: $finish    : tb_top.sv(161)
+#    Time: 26710 ns  Iteration: 1  Instance: /tb_top
+# Break in Module tb_top at tb_top.sv line 161
+# Stopped at tb_top.sv line 161
+# End time: 13:22:29 on Nov 21,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcover 2021.2_1 Coverage Utility 2021.05 May 15 2021
+# Start time: 13:22:29 on Nov 21,2026
+# vcover merge cov/merged.ucdb cov/smoke_1.ucdb cov/backpressure_1.ucdb cov/overflow_1.ucdb 
+# QuestaSim-64 vcover 2021.2_1 Coverage Utility 2021.05 May 15 2021
+# Merging file cov/smoke_1.ucdb
+# Merging file cov/backpressure_1.ucdb
+# Merging file cov/overflow_1.ucdb
+# Writing merged result to cov/merged.ucdb
+# 
+# End time: 13:22:29 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcover 2021.2_1 Coverage Utility 2021.05 May 15 2021
+# Start time: 13:22:29 on Nov 21,2026
+# vcover report -details -cvg cov/merged.ucdb -output cov/coverage.txt 
+# End time: 13:22:30 on Nov 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcover 2021.2_1 Coverage Utility 2021.05 May 15 2021
+# Start time: 13:22:30 on Nov 21,2026
+# vcover report -html -output cov/html -details cov/merged.ucdb 
+# 
+# End time: 13:22:32 on Nov 21,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# ============================================================
+#  3 / 3 runs passed
+#  merged coverage : cov/coverage.txt
+#  html report     : cov/html/index.html
+# ============================================================
