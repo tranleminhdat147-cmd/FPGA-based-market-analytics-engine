@@ -1,0 +1,56 @@
+# do run.do math
+# math
+# 1
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 14:20:35 on Nov 21,2026
+# vlog -sv ../analytics_core.sv ../analytics_core_axis.sv ../bar_trigger.sv ../ema.sv ../microprice.sv ../quote.sv ../return_sq.sv ../sigma_sqrt.sv ../timestamp.sv tb_math.sv tb_math_chain.sv 
+# ** Note: (vlog-220) 'D:/altera_lite/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module analytics_core
+# -- Compiling module analytics_core_axis
+# -- Compiling module bar_trigger
+# -- Compiling module ema
+# -- Compiling module microprice
+# -- Compiling module quote
+# -- Compiling module return_sq
+# -- Compiling module sigma_sqrt
+# -- Compiling module timestamp
+# -- Compiling module tb_math
+# -- Compiling module tb_math_chain
+# 
+# Top level modules:
+# 	analytics_core_axis
+# 	tb_math
+# 	tb_math_chain
+# End time: 14:20:35 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) 'D:/altera_lite/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -quiet -onfinish stop work.tb_math 
+# Start time: 14:20:35 on Nov 21,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# microprice done, max error = 0.048819 % of spread
+# sqrt done
+# quote done
+# ema settled at 999.999985 (target 1000)
+# ALL PASS
+# ** Note: $finish    : tb_math.sv(158)
+#    Time: 961160 ns  Iteration: 1  Instance: /tb_math
+# Break at tb_math.sv line 158
+# Stopped at tb_math.sv line 158
+# End time: 14:20:36 on Nov 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
